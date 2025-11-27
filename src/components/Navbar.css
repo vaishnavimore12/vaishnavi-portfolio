@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  background-color: rgb(234, 236, 239);
+  height: 50px;
+}
+.navbar .nav-link {
+  color: rgb(41, 2, 2);
+  align-items: center;
+  justify-content: center;
+  font-family: "DynaPuff", system-ui;
+  padding: 10px;
+  margin: 15px;
+}
+#myheader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .nav-link:hover {
+  color: rgb(129, 85, 5);
+}
+
+.logo {
+  color: rgb(15, 0, 0);
+  font-family: "Gloria Hallelujah", cursive;
+  margin-left: 25px;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.collapse .navbar-collapse {
+  position: absolute;
+  top: 100%;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .mobile-hidden-logo {
+    display: none;
+  }
+
+  .navbar-collapse.show .mobile-hidden-logo {
+    display: inline-block;
+  }
+}

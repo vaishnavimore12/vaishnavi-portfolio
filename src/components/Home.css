@@ -1,0 +1,154 @@
+html{
+  scroll-behavior: smooth;
+  
+}
+.home{
+  height: 100vh;
+}
+
+.row1{
+  width: 100%;
+  display: flex;
+  background: #0e2941;
+  background: -webkit-linear-gradient(to right, #5fa0d9, #021322);
+  background: linear-gradient(to right, #000a15, #0b3a62);
+  
+}
+.aos-animate.pic{
+  width: 756px;
+  height: 100vh;
+  
+  opacity: 0.5 !important;
+}
+.column1{
+  width: 50%;
+ 
+}
+
+
+.Projects {
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  background: #000428; 
+background: -webkit-linear-gradient(to right, #7d1fc9, #c514c5);  
+  background: linear-gradient(
+    to right,
+    #3d89cc,
+    #040b4d
+  ); 
+  color: white;
+  box-shadow: rgb(52, 58, 93) 0px 0px 8px 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.Projects:hover {
+  animation: btnhover 1s both;
+  background-color: #6aaeea;
+}
+
+@keyframes btnhover {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.download {
+  width: 150px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 300px;
+  cursor: pointer;
+}
+.download a {
+  text-decoration: none;
+  font-family: "DynaPuff", system-ui;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-shadow: #2b032b 3px 5px 9px;
+} 
+
+.top {
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+flex-direction: column;
+ margin-top: 180px;
+}
+
+
+/* .name {
+ margin: 10px;
+  font-size: 25px;
+  font-family: "DynaPuff", system-ui;
+  word-spacing: 5px;
+  font-style: italic;
+  color: #f7f2f2;
+  width: 170px;
+  text-align: center;
+  animation: type 2s steps(40,end) forwards;
+}
+@keyframes type {
+  from { width: 0; }
+  to { width: 100%; }
+} */
+
+
+.name {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff; /* cursor */
+  animation: typing 5s steps(40, end), blink 0.7s step-end infinite;
+  font-size: 25px;
+  font-family: "DynaPuff", system-ui;
+  word-spacing: 5px;
+  font-style: italic;
+  color: #f7f2f2;
+}
+
+/* Typewriter animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 62%; }
+}
+
+/* Cursor blinking */
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: rgb(251, 247, 247); }
+  100%{ border-color: transparent;}
+}
+
+
+
+.role {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  margin-left: 30px;
+  text-align:center;
+  color: rgb(248, 238, 248);
+}
+.bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 100px;
+  height: 250px;
+}
