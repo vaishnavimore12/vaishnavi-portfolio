@@ -141,10 +141,13 @@ text-decoration: none;}
     .link{
         display: none;
     }
+    .contact{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 1024px){
     .col3 {
-        width: 60%;
+        width: 80%;
         max-width: 100%;
         height: auto;   /* optional but helps */
         padding: 20px;
