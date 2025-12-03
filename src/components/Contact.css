@@ -10,8 +10,8 @@
     border-radius: 20px;
     height: 74vh;
     background: #6190E8;  
-    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8); 
+    background: linear-gradient(to right, #A7BFE8, #6190E8); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 36px;
    
@@ -85,15 +85,15 @@ text-decoration: none;}
 @media screen and (max-width: 480px){
     .col3 {
         width: 100%;
-        height: auto;   /* optional but helps */
+        height: auto;   
         padding: 20px;
     }
 .row3{
       padding: 10px;
     }
     form .btn {
-        margin-left: 0; /* prevents overflow */
-        width: 100%;    /* optional */
+        margin-left: 0;
+        width: 100%;    
     }
 
     .icon {
@@ -115,7 +115,7 @@ text-decoration: none;}
     .col3 {
         width: 80%;
         max-width: 100%;
-        height: auto;   /* optional but helps */
+        height: auto;  
         padding: 20px;
         margin: 20px;
     }
@@ -124,8 +124,8 @@ text-decoration: none;}
       
     }
     form .btn {
-        margin-left: 0; /* prevents overflow */
-        width: 100%;    /* optional */
+        margin-left: 0; 
+        width: 100%;    
     }
 
     .icon {
@@ -149,7 +149,7 @@ text-decoration: none;}
     .col3 {
         width: 80%;
         max-width: 100%;
-        height: auto;   /* optional but helps */
+        height: auto;  
         padding: 20px;
         margin: 20px;
     }
@@ -158,8 +158,8 @@ text-decoration: none;}
       
     }
     form .btn {
-        margin-left: 0; /* prevents overflow */
-        width: 100%;    /* optional */
+        margin-left: 0;
+        width: 100%;   
     }
 
     .icon {

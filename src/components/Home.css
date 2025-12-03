@@ -1,247 +1,290 @@
-
-.row1{ 
-  width: 100%; 
-  display: flex; 
+.row1 {
+  width: 100%;
+  display: flex;
   background: #0e2941;
-   background: -webkit-linear-gradient(to right, #5fa0d9, #021322); 
-   background: linear-gradient(to right, #000a15, #0b3a62); 
+  background: -webkit-linear-gradient(to right, #5fa0d9, #021322);
+  background: linear-gradient(to right, #000a15, #0b3a62);
+}
+.pic {
+  width: 100%;
+
+  height: auto;
+  max-height: 100vh;
+  opacity: 0.6 !important;
+  transition: transform 0.8s ease-in-out, top 0.8s ease-in-out, left 0.8s ease-in-out;
+  position: relative;
+}
+
+.column1,
+.column2 {
+  width: 50%;
+  flex: 1;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.download {
+  width: 100%;
+  max-width: 180px;
+  margin: 20px auto 80px auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.download a {
+  text-decoration: none;
+  font-family: "DynaPuff", system-ui;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-shadow: #2b032b 3px 5px 9px;
+  display: block;
+}
+
+.name {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  animation: typing 5s steps(29, end) forwards, blink 0.7s step-end infinite;
+  font-size: 25px;
+  font-family: "DynaPuff", system-ui;
+  word-spacing: 5px;
+  font-style: italic;
+  color: #f7f2f2;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
   }
-  .pic { 
-    width: 100%; 
-    
-    height: 100vh; 
-    opacity: 0.5 !important;
-   }  
-   .column1,.column2{ width: 50%; flex: 1; }
+  to {
+    width: 29ch;
+  }
+}
 
-    .top {
-     display: flex;
-     align-items: center; 
-     justify-content: center;
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(251, 247, 247);
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.role {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  margin-left: 30px;
+  text-align: center;
+  color: rgb(248, 238, 248);
+}
+.bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 100px;
+  height: 250px;
+}
+
+.Projects {
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #7d1fc9, #c514c5);
+  background: linear-gradient(to right, #3d89cc, #040b4d);
+  color: white;
+  box-shadow: rgb(52, 58, 93) 0px 0px 8px 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.Projects:hover {
+  animation: btnhover 1s both;
+  background-color: #6aaeea;
+}
+@keyframes btnhover {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .row1 {
     flex-direction: column;
-     margin-top: 200px;
-    }
-    
-    .download { 
-      width: 100%; 
-      max-width: 180px; 
-      margin: 20px auto 80px auto; cursor: 
-      pointer; text-align: center;
-     } 
-     
-     .download a { 
-      text-decoration: 
-      none; font-family: 
-      "DynaPuff", system-ui; 
-      color: rgb(255, 255, 255);
-       letter-spacing: 2px;
-        font-size: 13px; 
-        text-shadow: #2b032b 3px 5px 9px;
-         display: block; 
-        }
-    
-    
-    .name {
-      display: inline-block;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 3px solid #fff;
-      animation: typing 5s steps(29, end) forwards, blink 0.7s step-end infinite ;
-      font-size: 25px;
-      font-family: "DynaPuff", system-ui;
-      word-spacing: 5px;
-      font-style: italic;
-      color: #f7f2f2;
-      
-    } 
-    
-  
-    @keyframes typing {
-      from { width: 0ch; }
-      to { width: 29ch;}
-    }
-    
-    
-    @keyframes blink {
-      0% { border-color: transparent; }
-      50% { border-color: rgb(251, 247, 247); }
-      100%{ border-color: transparent;}
-    }
-     
-    
-    
-    .role {
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-      font-size: 16px;
-      margin-left: 30px;
-      text-align:center;
-      color: rgb(248, 238, 248);
-    }
-    .bio {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    
-      border-radius: 100px;
-      height: 250px;
-    }
-    
-    .Projects {
-       padding: 5px 20px 5px 20px;
-        border-radius: 10px;
-         border: none;
-          font-size: 20px;
-           margin: 20px; 
-           cursor: pointer; 
-           background: #000428; 
-           background: -webkit-linear-gradient(to right, #7d1fc9, #c514c5); 
-           background: linear-gradient( to right, #3d89cc, #040b4d );
-            color: white; 
-            box-shadow: rgb(52, 58, 93) 0px 0px 8px 1px; 
-            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; 
-          } 
-          .Projects:hover {
-             animation: btnhover 1s both; 
-             background-color: #6aaeea; 
-            }
-             @keyframes btnhover { 
-              0% { transform: scale3d(1, 1, 1); } 
-              30% { transform: scale3d(1.25, 0.75, 1); }
-               50% { transform: scale3d(1.15, 0.85, 1); } 
-               75% { transform: scale3d(1.05, 0.95, 1); } 
-               100% { transform: scale3d(1, 1, 1); } }
-    
-    @media screen and (max-width:1024px){
-     .row1 {
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-        text-align: center;
-      }
-      
-      
-      .pic,
-      .aos-animate.pic {
-        width: 100%;
-        height: auto;
-        max-width: 350px;
-        margin: 0 auto;
-        opacity: 0.5 !important;
-      }
-    
-     .column1, .column2 {
-        width: 100%;
-        flex: unset;
-        position: relative;
-      }
-      
-    .name{
-      font-size: 15px;
-    }
-    .role{
-      font-size: 12px;
-      width: 25%;
-    }
-    .Projects{
-      font-size: 10px;
-      margin-top: 10px;
-      width: 120px;
-    }
-     
-    
-      .top {
-        margin-top: 40px;
-      }
-    
-      .name {
-        font-size: 22px;
-      }
-    
-      .role {
-        font-size: 15px;
-        width: 90%;
-        margin: 10px auto 0 auto;
-      }
-    
-      .Projects {
-        width: 180px;
-        font-size: 16px;
-      }
-    
-      .download {
-        margin-top: 20px;
-        position: relative;
-        left: 0;
-      }
-    
-      .download a {
-        font-size: 12px;
-      }
-    }
-    
-    
-    @media screen and (max-width: 768px) {
-      .pic, .aos-animate.pic {
-        width: 70%;
-        max-width: 300px;
-      }
-    
-      .name {
-        font-size: 20px;
-      }
-    
-      .role {
-        font-size: 14px;
-        width: 95%;
-      }
-    
-      .Projects {
-        width: 160px;
-        font-size: 15px;
-      }
-    
-      .download a {
-        font-size: 11px;
-      }
-    }
-  
-    @media screen and (max-width: 480px) {
-      .pic, .aos-animate.pic {
-        width: 90%;
-        max-width: 220px;
-      }
-    
-      .top {
-        margin-top: 30px;
-      }
-    
-      .name {
-        font-size: 18px;
-        width: 0; 
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .pic,
+  .aos-animate.pic {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto;
+    opacity: 1 !important;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .column1,
+  .column2 {
+    width: 100%;
+    flex: unset;
+    position: relative;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+  .role {
+    font-size: 12px;
+    width: 25%;
+  }
+  .Projects {
+    font-size: 10px;
+    margin-top: 10px;
+    width: 120px;
+  }
+
+  .top {
+    margin-top: 40px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .role {
+    font-size: 15px;
+    width: 90%;
+    margin: 10px auto 0 auto;
+  }
+
+  .Projects {
+    width: 180px;
+    font-size: 16px;
+  }
+
+  .download {
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+  }
+
+  .download a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pic,
+  .aos-animate.pic {
+    width: 70%;
+    opacity: 1;
+    max-width: 300px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .role {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .Projects {
+    width: 160px;
+    font-size: 15px;
+  }
+
+  .download a {
+    font-size: 11px;
+  }
+
+  .stick-to-navbar {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    left: auto;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 9999;
+    transform: scale(0.3);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pic,
+  .aos-animate.pic {
+    width: 90%;
+    max-width: 220px;
+  }
+
+  .top {
+    margin-top: 30px;
+  }
+
+  .name {
+    font-size: 18px;
+    width: 0;
     display: inline-block;
-      }
-    
-      .role {
-        font-size: 12px;
-      }
-    
-      .Projects {
-        width: 140px;
-        font-size: 14px;
-        margin: 15px auto;
-      }
-    
-      .download {
-        margin-top: 10px;
-      }
-    
-      .download a {
-        font-size: 10px;
-      }
-    
-    }
-  
+  }
 
+  .role {
+    font-size: 12px;
+  }
 
+  .Projects {
+    width: 140px;
+    font-size: 14px;
+    margin: 15px auto;
+  }
 
-   
+  .download {
+    margin-top: 10px;
+  }
+
+  .download a {
+    font-size: 10px;
+  }
+  .stick-to-navbar {
+    position: fixed;
+    transform: scale(0.3);
+    right: 20px;
+    left: auto;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 1;
+    border-radius: 50%;
+    z-index: 9999;
+  }
+}

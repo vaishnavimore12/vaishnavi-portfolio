@@ -1,18 +1,37 @@
 import "./Home.css";
 import profilepic from "../images/portfoliopic.jpg";
-
+import { useEffect,useState } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 
 function Home() {
   const project = () => {
-    document.getElementById("project").scrollIntoView({ behaviour: "smooth" });
+    document.getElementById("project").scrollIntoView({ behavior: "smooth" });
   };
+
+  const [stick, setStick] = useState(false);
+
+  useEffect(()=>{
+    const handleScroll =() =>{
+      if (window.innerWidth <=768){
+      if(window.scrollY > 150){
+        setStick(true);
+      }else{
+        setStick(false);
+      }
+    }else{
+      setStick(false)
+    }
+    };
+
+    window.addEventListener("scroll",handleScroll);
+    return()=>window.removeEventListener("scroll", handleScroll);
+  },[]);
 
   return (<div className="home">
     <div className="row1">
       <div className="column1">
-        <img className="pic" src={profilepic} alt="Vaishnavi More" data-aos="fade-right"  ></img>
+        <img className={`pic ${stick ? "stick-to-navbar" : ""}`} src={profilepic} alt="Vaishnavi More" data-aos="fade-right"  ></img>
       </div>
       <div className="column2">
         <div className="top" data-aos="fade-left" data-aos-delay="400">
