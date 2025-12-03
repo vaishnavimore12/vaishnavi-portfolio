@@ -1,18 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 .col3{
-    width: 450px;
-   
+    width: 450px;  
     border-radius: 20px;
     height: 74vh;
     background: #6190E8;  
     background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 36px;
    
-    padding: 40px;
+
 }
+
+
 
 .row3{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     background: #aac7e1;
     background: -webkit-linear-gradient(to right, #5fa0d9, #14548c);
@@ -20,8 +30,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
-.btn{
+form .btn{
     margin-left: 140px;
     background-color: #52585e;
     color: white;
@@ -43,17 +54,17 @@
     position: relative;
     cursor: pointer;
     margin: 40px;
-    margin-left: 150px;
+   
 }
  .mail{
-    width: 25px;
-    
-    
+    width: 25px; 
+   
 }
 
 
 .lnk{
-    width: 20px; 
+    width: 20px;
+    margin: 10px;
 }
 .gmail{color: white;
 margin-left: 10px;
@@ -68,4 +79,97 @@ text-decoration: none;}
     color: white;
     margin: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width: 480px){
+    .col3 {
+        width: 100%;
+        height: auto;   /* optional but helps */
+        padding: 20px;
+    }
+.row3{
+      padding: 10px;
+    }
+    form .btn {
+        margin-left: 0; /* prevents overflow */
+        width: 100%;    /* optional */
+    }
+
+    .icon {
+        margin: 0;
+    }
+    .gmail{
+        display: none;
+    }
+    .mail{
+        margin: 20px;
+    }
+
+    .link{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .col3 {
+        width: 80%;
+        max-width: 100%;
+        height: auto;   /* optional but helps */
+        padding: 20px;
+        margin: 20px;
+    }
+.row3{
+      padding: 10px;
+      
+    }
+    form .btn {
+        margin-left: 0; /* prevents overflow */
+        width: 100%;    /* optional */
+    }
+
+    .icon {
+        margin: 0;
+    }
+    .gmail{
+        display: none;
+    }
+    .mail{
+        margin: 20px;
+    }
+
+    .link{
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px){
+    .col3 {
+        width: 60%;
+        max-width: 100%;
+        height: auto;   /* optional but helps */
+        padding: 20px;
+        margin: 20px;
+    }
+.row3{
+      padding: 10px;
+      
+    }
+    form .btn {
+        margin-left: 0; /* prevents overflow */
+        width: 100%;    /* optional */
+    }
+
+    .icon {
+        margin: 0;
+    }
+    .gmail{
+        display: none;
+    }
+    .mail{
+        margin: 20px;
+    }
+
+    .link{
+        display: none;
+    }
 }

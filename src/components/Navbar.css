@@ -4,7 +4,7 @@
   height: 50px;
 }
 .navbar .nav-link {
-  color: rgb(41, 2, 2);
+  color: rgb(16, 8, 8);
   align-items: center;
   justify-content: center;
   font-family: "DynaPuff", system-ui;
@@ -17,7 +17,7 @@
   z-index: 100;
 }
 .navbar .nav-link:hover {
-  color: rgb(129, 85, 5);
+  color: rgb(216, 176, 56);
 }
 
 .logo {
@@ -31,7 +31,7 @@
 .collapse .navbar-collapse {
   position: absolute;
   top: 100%;
-  color: white;
+
 }
 
 @media (max-width: 991px) {
@@ -41,5 +41,8 @@
 
   .navbar-collapse.show .mobile-hidden-logo {
     display: inline-block;
+  }
+  .navbar-collapse.show .nav-link{
+    color: white !important;
   }
 }

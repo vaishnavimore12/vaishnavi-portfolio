@@ -63,11 +63,23 @@ const [result] = useState("");
 </div>
        <div className="icon">
        
-        <img className="mail" src={gmail} alt="Gmail"></img>
-        <a className="gmail" href="morevaishnavi011@gmail.com">morevaishnavi011@gmail.com</a>
-        <img className="lnk" src={linkedin} alt="Linkedin"></img>
-        <a  className="link" href="https://www.linkedin.com/in/vaishnavi-more-199a6b230/">Vaishnavi More</a>
         
+       <a 
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=morevaishnavi011@gmail.com" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <img className="mail" src={gmail} alt="Gmail" />
+</a>
+
+       <a 
+  href="https://www.linkedin.com/in/vaishnavi-more-199a6b230/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+    <img className="lnk" src={linkedin} alt="Linkedin" />
+</a>
+  
        </div>
         </div>
        </div>)

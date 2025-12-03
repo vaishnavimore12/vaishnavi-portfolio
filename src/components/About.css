@@ -1,26 +1,32 @@
 .section {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
   background: #0e2941;
   background: -webkit-linear-gradient(to right, #01172b, #021322);
   background: linear-gradient(to right, #fafbfc, #f3f4f6);
  
 
   display: flex;
-  align-items: center;
+  
   justify-content: center;
 }
 .block {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  /* flex-wrap: nowrap;
+  gap: 30px; */
   /* background-color: rgb(240, 245, 245); */
 }
 
 .para {
   width: 50%;
   background-color: rgb(104, 163, 219);
-  height: 40vh;
+  height: auto;
+  min-height: 40vh;
+  
   font-family: "Gloria Hallelujah", cursive;
   font-size: 16px;
   text-align: justify;
@@ -42,6 +48,85 @@
 }
 
 .girl {
-  width: 500px;
-  margin: 30px;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
 }
+
+
+@media screen and (max-width: 1024px){
+
+.block{
+ text-align: center;
+  flex-wrap: wrap;
+}
+
+.girl{
+ 
+    width: 220px;
+}
+.para{
+  width: 80%;
+  font-size: 1rem;
+
+  
+  min-height: 20vh;
+}
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+  .section{
+    align-items: flex-start;
+    
+    min-height: auto;
+  }
+  .para {
+    width: 90%;
+    /* padding: 25px; */
+    height: auto;
+    font-size: 0.95rem;
+    margin: 40px;
+  }
+
+  .girl {
+    width: 120px; display: none;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .section{
+    align-items: flex-start;
+    
+    min-height: auto;
+  }
+  .para {
+    width: 80%;
+    padding: 15px;
+    font-size: 0.8rem;
+    height: auto;
+    border-radius: 20px;
+    
+  
+  }
+
+  .girl {
+    display: none;
+    width: 80px;
+           /* center horizontally */
+      
+  }
+
+  .abt {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
+
+

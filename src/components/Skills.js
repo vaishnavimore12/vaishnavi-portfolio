@@ -5,6 +5,7 @@ import bootstrap from "../images/bootstrap.png";
 import java from "../images/java.png";
 import sql from "../images/sql.png";
 import css from "../images/css.png";
+import github from "../images/github.png";
 import "./Skills.css";
 
 function Skills(){
@@ -16,6 +17,7 @@ function Skills(){
         {icon: css, label:"CSS"},
         {icon: java, label:"Java"},
         {icon: sql, label:"SQL"},
+        {icon: github, label:"Github"},
     ]
     return (<div className="sec1" id="Skills">
      {/* <span className="skill" data-aos="fade-left">Skills</span> */}

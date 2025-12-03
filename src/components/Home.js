@@ -24,9 +24,9 @@ function Home() {
              beautiful, but also fast and user friendly.
            </p>
        <button className="Projects" onClick={project}>
-         View Projects
+         Projects
        </button>
-        </div>
+        
       
 
        <div className="download" data-aos="fade-up" data-aos-delay="600">
@@ -35,18 +35,17 @@ function Home() {
               src="https://lottie.host/9c6d08a6-4e46-4f34-bb23-3bb703225210/QqTmcowXLE.lottie"
              loop
              autoplay
+             style={{width: "80px", display: "block", margin: "0 auto 10px auto"}}
            />
            Download Resume
          </a>
        </div>
       </div>
     </div>
-
+</div>
   </div>
 
   );
 }
 export default Home;
 
-
-// dc227e3b-f1cc-4a93-a73b-1130352c5271
