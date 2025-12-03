@@ -28,7 +28,7 @@ function Navbar() {
           )}
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/Home">
+              <a className="nav-link" href="#homee">
                 Home
               </a>
             </li>

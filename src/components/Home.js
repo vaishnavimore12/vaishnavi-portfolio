@@ -28,7 +28,7 @@ function Home() {
     return()=>window.removeEventListener("scroll", handleScroll);
   },[]);
 
-  return (<div className="home">
+  return (<div className="home" id="homee">
     <div className="row1">
       <div className="column1">
         <img className={`pic ${stick ? "stick-to-navbar" : ""}`} src={profilepic} alt="Vaishnavi More" data-aos="fade-right"  ></img>
