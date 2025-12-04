@@ -11,8 +11,14 @@
   height: auto;
   max-height: 100vh;
   opacity: 0.6 !important;
-  transition: transform 0.8s ease-in-out, top 0.8s ease-in-out, left 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  
+}
+.pic-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.6s ease-in-out, top 0.6s ease-in-out, right 0.6s ease-in-out;
 }
 
 .column1,
@@ -204,7 +210,7 @@
 @media screen and (max-width: 768px) {
   .pic,
   .aos-animate.pic {
-    width: 70%;
+    width: 100%;
     opacity: 1;
     max-width: 300px;
   }
@@ -226,8 +232,9 @@
   .download a {
     font-size: 11px;
   }
+ 
 
-  .stick-to-navbar {
+  .stick-to-navbar .pic{
     position: fixed;
     top: 10px;
     right: 20px;
@@ -238,7 +245,7 @@
     object-fit: cover;
     border-radius: 50%;
     z-index: 9999;
-    transform: scale(0.3);
+    /* transform: scale(0.25); */
   }
 }
 
@@ -278,11 +285,11 @@
   }
   .stick-to-navbar {
     position: fixed;
-    transform: scale(0.3);
+    /* transform: scale(0.3); */
     right: 20px;
     left: auto;
-    width: 40px !important;
-    height: 40px !important;
+    /* width: 40px !important;
+    height: 40px !important; */
     opacity: 1;
     border-radius: 50%;
     z-index: 9999;

@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  background-color: rgb(234, 236, 239);
+  background-color: rgb(219, 223, 231);
   height: 50px;
 }
 .navbar .nav-link {

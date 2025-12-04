@@ -11,7 +11,8 @@
    width: 100%;
   height: 80vh;
   display: flex;
- 
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 .column {
@@ -46,6 +47,7 @@
   font-size: 20px;
   font-family: "Gloria Hallelujah", cursive;
   color: #051626;
+  font-weight: 900;
  display: flex;
  justify-content: center;
  margin: 20px;
@@ -89,7 +91,8 @@
   align-items: center;
   justify-content: center;
  cursor: pointer;
-  flex-direction: column; padding: 40px;
+  flex-direction: column; 
+  padding: 10px;
   transition: transform 1s ease,boxshadow 1s ease ;
 }
 .aos-animate.column4:hover{
@@ -99,10 +102,11 @@
 }
 .row4 {
   width: 100%;
- 
+ height: auto;
  display: flex;
  flex-wrap: wrap;
  align-items: center;
+ margin: 10px;
  justify-content: center;
 }
 .view-btn{
@@ -115,6 +119,10 @@
   border-radius: 15px;
   font-size: 15px;
   transition: 1s ease;
+}
+
+.column4 desc{
+  text-align: justify;
 }
 
 .view-btn:hover{
@@ -141,15 +149,16 @@
 
 @media screen and (max-width: 1024px){
   .row{
-    
+    margin-left: 20px;
     width: 100%;
+    height: auto;
   }
   .column{
-    flex: 1 1 45%;
+    flex: 1 1 300px;
     min-width: 250px;
     max-width: 350px;
-    height: 450px;
-    
+    height: auto;
+   
   }
   .row4{
     
@@ -181,13 +190,13 @@
   .row{
     width: 100%;
     height: auto;
+    margin-left: 10px;
   }
   .column{
     min-width: 250px;
     max-width: 350px;
-    height: 450px;
-  display: block;
-  margin-top: 100px;
+    height: auto;
+  
   }
   .row4{
     width: 100%;
@@ -213,14 +222,16 @@
 @media screen and (max-width: 480px){
 
   .row{
+   margin-left: 10px;
     width: 100%;
     height: auto;
   }
   .column{
+    
     min-width: 250px;
     max-width: 300px;
    
-  display: block;
+
   }
   .row4{
     width: 100%;
@@ -228,8 +239,9 @@
   }
   .column4{
     flex: 1 1 300px;
-    min-width: 350px;
-    max-width: 350px;
+    
+    min-width: 250px;
+    max-width: 300px;
     height: auto;
   }
   .title{

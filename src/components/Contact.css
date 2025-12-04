@@ -9,15 +9,20 @@
     width: 450px;  
     border-radius: 20px;
     height: 74vh;
-    background: #6190E8;  
-    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8); 
-    background: linear-gradient(to right, #A7BFE8, #6190E8); 
+    background: #360353;  
+    background: -webkit-linear-gradient(to right, #4b50db, #660f7c); 
+    background: linear-gradient(to right, #6996bb, #032c4d); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 36px;
    
 
 }
 
+.form-control{
+    background-color: #9cc7e7de;
+    
+    border: 0;
+}
 
 
 .row3{
@@ -34,21 +39,23 @@
 }
 form .btn{
     margin-left: 140px;
-    background-color: #52585e;
+    background-color: #223a8a;
     color: white;
     transition: 0.5s ease-in-out;
 }
 .btn:hover{
-    background-color: #5e0a42;
+    background-color: #681f50;
     color: white;
 }
 .contact{
     font-size: 40px;
     font-family: "Gloria Hallelujah", cursive;
+    color: white;
 }
 
 .form-label{
-    color: black;
+    color: rgb(251, 251, 251);
+    font-family: "Gloria Hallelujah", cursive;
 }
 .icon{
     position: relative;

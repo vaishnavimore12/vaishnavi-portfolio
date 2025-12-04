@@ -31,9 +31,11 @@ function Home() {
   return (<div className="home" id="homee">
     <div className="row1">
       <div className="column1">
-        <img className={`pic ${stick ? "stick-to-navbar" : ""}`} src={profilepic} alt="Vaishnavi More" data-aos="fade-right"  ></img>
-      </div>
+      <div className={`pic-wrapper ${stick ? "stick-to-navbar" : ""}`}>
+        <img className="pic" src={profilepic} alt="Vaishnavi More" data-aos="fade-right"  ></img>
+      </div></div>
       <div className="column2">
+        
         <div className="top" data-aos="fade-left" data-aos-delay="400">
         <span className="name">
              Hi there! My name is <span style={{ color: "#FF010B" }}>Vaishnavi More</span>
