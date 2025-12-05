@@ -45,7 +45,7 @@ const [result] = useState("");
             <div className="col3" data-aos="fade-up">
                  <form onSubmit={onSubmit} >
                     <label className="contact">Contact Me</label>
-   <div class="mb-3 mt-3">
+   <div className="mb-3 mt-3">
     <label for="name" class="form-label">Your Name:</label>
     <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required></input>
   </div>   

@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.sect{
+    height: 10vh;
+}
+
 
 .col3{
     width: 450px;  
@@ -27,7 +31,7 @@
 
 .row3{
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     background: #aac7e1;
     background: -webkit-linear-gradient(to right, #5fa0d9, #14548c);
