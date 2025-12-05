@@ -1,10 +1,16 @@
+
+body{
+  background: #0e2941;
+ 
+  background: -webkit-linear-gradient(to right, #5fa0d9, #021322);
+  background: linear-gradient(to right, #000a15, #0b3a62);
+
+}
 .sec1{
     width: 100%;
     min-height: 50vh;
     
-    background: -webkit-linear-gradient(to right, #5fa0d9, #021322);
-  background: linear-gradient(to right, #000a15, #0b3a62);
-}
+  }
 
 .row2{
  

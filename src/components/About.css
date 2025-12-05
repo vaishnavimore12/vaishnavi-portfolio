@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  min-height: 80vh;
+  /* min-height: 70vh; */
   height: auto;
   background: #0e2941;
   background: -webkit-linear-gradient(to right, #01172b, #021322);
@@ -25,8 +25,8 @@
   width: 50%;
   background-color: rgb(104, 163, 219);
   height: auto;
-  min-height: 40vh;
-  
+  /* min-height: 40vh; */
+  margin: 50px;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 16px;
   text-align: justify;
@@ -34,7 +34,7 @@
   padding: 50px;
   color: rgb(255, 255, 255);
   box-shadow: rgb(92, 92, 132) 7px 10px 10px 10px;
-  /* margin-top: 10px; */
+ 
 }
 
 .abt {
@@ -63,7 +63,7 @@
 
 .girl{
  
-    width: 220px;
+    width: 150px;
 }
 .para{
   width: 80%;
