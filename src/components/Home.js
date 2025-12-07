@@ -51,7 +51,8 @@ function Home() {
       
 
        <div className="download" data-aos="fade-up" data-aos-delay="600">
-           <a href="/resume.pdf" download>
+           <a href={`${process.env.PUBLIC_URL}/Resume.pdf`} download>
+          
              <DotLottieReact
               src="https://lottie.host/9c6d08a6-4e46-4f34-bb23-3bb703225210/QqTmcowXLE.lottie"
              loop
